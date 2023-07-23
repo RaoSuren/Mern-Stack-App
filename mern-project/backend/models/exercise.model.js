@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
+
 const exerciseSchema = new Schema(
   {
     username: { type: String, required: true },
@@ -14,4 +15,5 @@ const exerciseSchema = new Schema(
 );
 
 const Exercise = mongoose.model("Exercise", exerciseSchema);
-module.export = Exercise;
+
+module.exports = Exercise;
